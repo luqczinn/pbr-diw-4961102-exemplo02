@@ -16,33 +16,44 @@
             padding: 1px;
             display: flex;
             flex-wrap: wrap;
+            height: 30rem;
+            align-content: start;
         }
 
         .item { 
             background-color: blue;
             color: white;
             font-weight: bold;
-            margin: 1rem;
+            margin: .1rem;
             padding: 1rem;
             width: 5rem;
-            height: 5rem;
+            height: 3rem;
         }
+
+        .logo {
+            flex-grow: 1;
+        }
+
+        .titulo-do-site {
+            flex-grow: 12;
+        }
+
+        .menu-sanduiche {
+            flex-grow: 1;
+        }
+
+        .painel {
+            display: flex;
+            border: 3px solid red;
+        }
+
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="item">Item 01</div>
-        <div class="item">Item 02</div>
-        <div class="item">Item 03</div>
-        <div class="item">Item 04</div>
-        <div class="item">Item 05</div>
-        <div class="item">Item 06</div>
-        <div class="item">Item 07</div>
-        <div class="item">Item 08</div>
-        <div class="item">Item 09</div>
-        <div class="item">Item 10</div>
-        <div class="item">Item 11</div>
-        <div class="item">Item 12</div>
-    </div>
+    <header class="painel">
+        <div class="item logo">Logo</div>
+        <div class="item titulo-do-site">Título do Site</div>
+        <div class="item menu-sanduiche">Menu</div>
+    </header>
 </body>
 </html>
